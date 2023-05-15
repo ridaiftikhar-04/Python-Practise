@@ -1,5 +1,6 @@
 #Print statement
 
+from operator import truediv
 from re import T
 
 
@@ -49,3 +50,36 @@ print(len(course))
 print(course.upper())
 print(course.endswith("T"))
 print(course.find("n"))
+
+#Arithemetic Operations
+#Precedence order -> Exponentiation -> Multiplication or Division -> Addition -> Subtraction
+x = (2+3) * 10 - 3
+print(x)
+
+#Math module
+import math
+print(math.floor(2.9)) #more detailed functions of pytgon 3 math module @ https://doc.python.org/3/library/math.html
+
+#if else statement
+is_hot = True
+is_cold = True
+if is_hot:
+    print("It is a hot day")
+    print("Drink Plenty of water")
+elif is_cold:
+    print("It's a cold day")
+    print("Wear warm clothes.")
+else:
+    print("It's a lovely day")
+print("Enjoy your day")
+
+#Exercise
+is_good_buyer = False
+house_price = 1000000
+if is_good_buyer:
+    down_payment = house_price * 0.1
+else:
+    down_payment = house_price * 0.2
+    
+print(f'Down Payment: ${down_payment}')
+
