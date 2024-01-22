@@ -135,3 +135,17 @@ print(list3)
 split_str = "Split this string into list elements"
 new_list = split_str.split(" ")
 print(new_list)
+
+#All the values that return False in Python
+    # False
+    # None
+    # Zero to any numeric type
+    # Any empty sequence. e.g., "" , (), [].
+    # Any empty mapping. e.g., {}.
+
+condition = {}
+
+if condition:
+    print("Evaluated to True")
+else:
+    print("Evaluated to False")
