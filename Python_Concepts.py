@@ -83,7 +83,7 @@ else:
     
 print(f'Down Payment: ${down_payment}')
 
-#Lists, Tuples, Sets, Dictionaries
+#----Lists, Tuples, Sets, Dictionaries----
 
 tuples = ('History' , 'Maths' , 'Art')
 
@@ -95,3 +95,18 @@ print(tuples1)
 tuples2 = tuples[:2]
 print(tuples2)
 
+#Lists
+list1 = ['Urdu', 'Arabic' , 'Turkish']
+
+#add at the end of the list
+list1.append('English')
+print(list1)
+
+#add at a specific location of the list e.g. 2nd index
+list1.insert(2 ,"Korean")
+print(list1)
+
+#add another list at the end of a list
+list2 = ['Spanish', 'Japanese']
+list1.extend(list2)
+print(list1)
