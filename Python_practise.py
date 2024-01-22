@@ -1,8 +1,9 @@
 #practise
-print("Hello World")
+tuples = ('History' , 'Maths' , 'Art')
 
-x = input("Whats your name: ")
-print("Hi!" , x)
+#remove first item of the tuple and display the rest
+tuples1 = tuples[1:] 
+print(tuples1)
 
-y = input("Whats your DOB:")
-print(y)
+tuples2 = tuples[:2]
+print(tuples2)
