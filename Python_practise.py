@@ -1,40 +1,28 @@
 #practise
-list1 = ['Urdu', 'Arabic' , 'Turkish']
+nums = [1,2,3,4,5]
+for num in nums:
+    if num == 3:
+        print("Number found!")
+        continue
+    print(num)  
 
-#add at the end of the list
-list1.append('English')
-print(list1)
+#Nested Loop / Inner loop 
+for num in nums:
+    for letter in 'abc':
+        print(num , letter)
 
-#add at a specific location of the list e.g. 2nd index
-list1.insert(2 ,"Korean")
-print(list1)
+#To iterate to a loop till specific index 
+for num in range(7):
+    print(num)
 
-#add another list at the end of a list
-list2 = ['Spanish', 'Japanese']
-list1.extend(list2)
-print(list1)
+#While loop
+x = 3
+while x<10:
+    print(x)
+    x = x+1
 
-#remove and return last element of the list
-list2.pop()
-print(list2)
-
-#sort the list alphabetically or in ascending order
-list1.sort()
-print(list1)
-
-#sort the list in descending order
-list1.sort(reverse = True)
-print(list1)
-
-#loop through the list
-for index, course in enumerate(list1):
-    print(index , course)
-
-#comma separated list
-list3 = ','.join(list1)
-print(list3)
-
-#split a string and convert each word into list element
-split_str = "Split this string into list elements"
-new_list = split_str.split(" ")
-print(new_list)
+y=1
+print("Infinite Loop")
+while True:
+    print(y)
+    y += 1
