@@ -1,28 +1,18 @@
 #practise
-nums = [1,2,3,4,5]
-for num in nums:
-    if num == 3:
-        print("Number found!")
-        continue
-    print(num)  
+#Functions
 
-#Nested Loop / Inner loop 
-for num in nums:
-    for letter in 'abc':
-        print(num , letter)
+def hello_func(greeting, name = 'You'):
+    return '{} , {}'.format(greeting, name)
 
-#To iterate to a loop till specific index 
-for num in range(7):
-    print(num)
+print(hello_func("Hi"))
 
-#While loop
-x = 3
-while x<10:
-    print(x)
-    x = x+1
 
-y=1
-print("Infinite Loop")
-while True:
-    print(y)
-    y += 1
+#Function that accepts arbitrary number of values using * and **
+def student_info(*args, **kwargs): 
+    print(args)
+    print(kwargs)
+
+subjects = ('Maths', 'Art')
+info = {'name' : 'John' , 'age' : 24}
+
+student_info(*subjects, **info)
