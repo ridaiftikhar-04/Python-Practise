@@ -179,7 +179,7 @@ while x<10:
 #     print(y)
 #     y += 1
     
-#Functions
+#------Functions--------
 def hello_func(greeting, name = 'You'):
     return '{} , {}'.format(greeting, name)
 
